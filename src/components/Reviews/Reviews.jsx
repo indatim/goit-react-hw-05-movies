@@ -5,7 +5,7 @@ import { Review } from './Reviews.styled';
 import { StyledFaUserCircle } from 'components/Icons/Icons.styled';
 import { Loader } from 'components/Loader/Loader';
 
-const Reviews = () => {
+const GetMoviesReviews = () => {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState([]);
 
@@ -36,4 +36,4 @@ const Reviews = () => {
     </>
   );
 };
-export default Reviews;
+export default GetMoviesReviews;
