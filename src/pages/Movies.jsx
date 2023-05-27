@@ -1,7 +1,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { getKeyWord } from 'components/tmdb-api';
-import { Form, Input } from '../pages/Movies.styled';
+import { Form, Input } from './Movies.styled';
 import { SearchBtn } from 'components/Button/Buttons.styled';
 import { StyledIoSearchCircle } from 'components/Icons/Icons.styled';
 import { Loader } from 'components/Loader/Loader';

@@ -2,10 +2,10 @@ import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from './SharedLayout/SharedLayout';
 
-const Movies = lazy(() => import('../pages/Movies'));
-const Home = lazy(() => import('../pages/Home'));
-const MovieDetails = lazy(() => import('../pages/MovieDetails'));
-const Credits = lazy(() => import('components/Credits/Credits'));
+const Movies = lazy(() => import('../Pages/Movies'));
+const Home = lazy(() => import('../Pages/Home'));
+const MovieDetails = lazy(() => import('../Pages/MovieDetails'));
+const Credits = lazy(() => import('components/Cast/Cast'));
 const Reviews = lazy(() => import('./Reviews/Reviews'));
 
 export const App = () => {

@@ -7,7 +7,7 @@ export const Container = styled.div`
   gap: 20px;
 `;
 
-export const CardWrapper = styled.div`
+export const MovieCard = styled.div`
   border: 1px solid black;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,7 +36,7 @@ export const MovieTitle = styled.h4`
   white-space: nowrap;
 `;
 
-export const Img = styled.img`
+export const MovieImg = styled.img`
   display: block;
   width: 100%;
   height: 90%;

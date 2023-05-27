@@ -13,7 +13,7 @@ export const Container = styled.div`
   list-style: none;
 `;
 
-export const CardWrapper = styled.div`
+export const CastCard = styled.div`
   display: flex;
   width: auto;
   flex-direction: column;

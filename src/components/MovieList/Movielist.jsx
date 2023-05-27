@@ -2,9 +2,9 @@ import { Link, useLocation } from 'react-router-dom';
 import defaultImage from '../noposter.png';
 import {
   Container,
-  CardWrapper,
+  MovieCard,
   MovieTitle,
-  Img,
+  MovieImg,
 } from 'components/MovieList/MovieList.styled';
 
 
@@ -21,17 +21,14 @@ export const MoviesList = ({ movies }) => {
         const poster = poster_path === null ? `${defaultImage}` : `${POSTER_URL}/${poster_path}`;
         
         return (
-          <CardWrapper key={id}>
+          <MovieCard key={id}>
             <Link to={`/movies/${id}`} state={{ from: location }}>
-              <Img
-                src={poster}
-                alt={title}
-              />
+              <MovieImg src={poster} alt={title} />
               <MovieTitle>
                 {title}, {release_date.slice(0, 4)}
               </MovieTitle>
             </Link>
-          </CardWrapper>
+          </MovieCard>
         );
       })}
     </Container>
