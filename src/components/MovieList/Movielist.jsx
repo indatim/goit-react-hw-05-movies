@@ -7,8 +7,6 @@ import {
   MovieImg,
 } from 'components/MovieList/MovieList.styled';
 
-
-
 export const MoviesList = ({ movies }) => {
   const location = useLocation();
   const POSTER_URL = 'https://image.tmdb.org/t/p/w300';
