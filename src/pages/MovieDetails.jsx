@@ -34,7 +34,7 @@ const MovieDetails = () => {
           <MainInfo>
             <img
               src={
-                movies.poster_path === undefined
+                movies.poster_path === null
                   ? `${defaultImage}`
                   : `${POSTER_URL}/${movies.poster_path}`
               }
